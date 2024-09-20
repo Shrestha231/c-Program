@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int x=20,y=30;
+int area_rect,perimeter_rect;
+
+clrscr();
+area_rect=x*y;
+perimeter_rect=2*(x+y);
+printf("area and perimeter of rectangle=%d %d",area_rect,perimeter_rect);
+getch();
+}
