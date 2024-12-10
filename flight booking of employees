@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include<string.h>
+
+	struct pre{
+	char name[50];
+	int age;
+	int seat_no;
+	char class[50];
+};
+int main(){
+int i,n,count=0;
+   printf("enter the number of passangers");
+   scanf("%d",&n);
+    struct pre std[n]; 
+   for(i=1;i<=n;i++){
+   	printf("Name of the passanger\n,age\n,seat_no.\n,class\n");
+   	scanf("%s %d %d %s",std[i].name,&std[i].age,&std[i].seat_no,std[i].class);
+   }
+   for(i=0;i<n;i++){
+   	if(strcmp(std[i].class, "economy") == 0){
+   		count++;
+   		printf("Name of the passanger=%s\n,age=%d\n,seat_no.=%d\n",std[i].name,std[i].age,std[i].seat_no);
+	   }
+   }
+	   printf("Total no. of passangers in economy class=%d",count);
+   
+   return 0;
+   
+}
+
