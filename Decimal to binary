@@ -1,0 +1,16 @@
+#include<stdio.h>
+int decTobinary(int n){
+	if(n==0)
+	{
+		return n;
+	}
+	else {
+		 decTobinary(n/2);
+		printf("%d",(n%2));
+	}
+}
+int main(){
+	int n=8;
+	decTobinary(n);
+	return 0;
+}
